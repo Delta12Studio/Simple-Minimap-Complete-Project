@@ -1,0 +1,361 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Minimap.gd" type="Script" id=1]
+[ext_resource path="res://Font/Font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://World/Map.png" type="Texture" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Blink"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Blink"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Blink"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Blink"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Blink"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="Minimap" type="ColorRect"]
+pause_mode = 2
+margin_right = 320.0
+margin_bottom = 180.0
+color = Color( 0, 0, 0, 0.392157 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Map" type="Sprite" parent="."]
+position = Vector2( 160, 88 )
+texture = ExtResource( 3 )
+
+[node name="Level1" type="Node2D" parent="."]
+
+[node name="Blink" type="ColorRect" parent="Level1"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 81.0
+margin_top = 65.0
+margin_right = 127.0
+margin_bottom = 112.0
+color = Color( 0.45098, 0.843137, 0.392157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level1/Blink"]
+autoplay = "Blink"
+anims/Blink = SubResource( 1 )
+anims/RESET = SubResource( 2 )
+
+[node name="Hide" type="ColorRect" parent="Level1"]
+margin_left = 81.0
+margin_top = 65.0
+margin_right = 127.0
+margin_bottom = 112.0
+color = Color( 0.85098, 0.627451, 0.4, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2" type="Node2D" parent="."]
+
+[node name="Blink" type="ColorRect" parent="Level2"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 129.0
+margin_top = 20.0
+margin_right = 176.0
+margin_bottom = 63.0
+color = Color( 0.45098, 0.843137, 0.392157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level2/Blink"]
+autoplay = "Blink"
+anims/Blink = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+
+[node name="Hide" type="ColorRect" parent="Level2"]
+margin_left = 129.0
+margin_top = 20.0
+margin_right = 176.0
+margin_bottom = 63.0
+color = Color( 0.85098, 0.627451, 0.4, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3" type="Node2D" parent="."]
+
+[node name="Blink" type="ColorRect" parent="Level3"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 178.0
+margin_top = 65.0
+margin_right = 224.0
+margin_bottom = 112.0
+color = Color( 0.45098, 0.843137, 0.392157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level3/Blink"]
+autoplay = "Blink"
+anims/Blink = SubResource( 5 )
+anims/RESET = SubResource( 6 )
+
+[node name="Hide" type="ColorRect" parent="Level3"]
+margin_left = 178.0
+margin_top = 65.0
+margin_right = 224.0
+margin_bottom = 112.0
+color = Color( 0.85098, 0.627451, 0.4, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level4" type="Node2D" parent="."]
+
+[node name="Blink" type="ColorRect" parent="Level4"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 129.0
+margin_top = 114.0
+margin_right = 176.0
+margin_bottom = 156.0
+color = Color( 0.45098, 0.843137, 0.392157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level4/Blink"]
+autoplay = "Blink"
+anims/Blink = SubResource( 7 )
+anims/RESET = SubResource( 8 )
+
+[node name="Hide" type="ColorRect" parent="Level4"]
+margin_left = 129.0
+margin_top = 114.0
+margin_right = 176.0
+margin_bottom = 156.0
+color = Color( 0.85098, 0.627451, 0.4, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Central" type="Node2D" parent="."]
+
+[node name="Blink" type="ColorRect" parent="Central"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 129.0
+margin_top = 65.0
+margin_right = 176.0
+margin_bottom = 112.0
+color = Color( 0.45098, 0.843137, 0.392157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Central/Blink"]
+autoplay = "Blink"
+anims/Blink = SubResource( 9 )
+anims/RESET = SubResource( 10 )
+
+[node name="Door2" type="ColorRect" parent="Central"]
+margin_left = 148.0
+margin_top = 63.0
+margin_right = 156.0
+margin_bottom = 65.0
+color = Color( 0, 0, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Door4" type="ColorRect" parent="Central"]
+margin_left = 148.0
+margin_top = 112.0
+margin_right = 156.0
+margin_bottom = 114.0
+color = Color( 1, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hide" type="ColorRect" parent="Central"]
+margin_left = 127.0
+margin_top = 63.0
+margin_right = 178.0
+margin_bottom = 114.0
+color = Color( 0.85098, 0.627451, 0.4, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 128.0
+margin_right = 128.0
+margin_bottom = 160.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Level 1"
+align = 1
+valign = 1
+
+[node name="Position" type="Label" parent="."]
+margin_left = 176.0
+margin_top = 128.0
+margin_right = 304.0
+margin_bottom = 160.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Left"
+align = 1
+valign = 1

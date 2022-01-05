@@ -1,0 +1,138 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Font/Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Menu.gd" type="Script" id=2]
+
+[node name="Menu" type="ColorRect"]
+pause_mode = 2
+margin_right = 323.0
+margin_bottom = 184.0
+color = Color( 0, 0, 0, 0.705882 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 104.0
+margin_top = 16.0
+margin_right = 216.0
+margin_bottom = 168.0
+color = Color( 0.921569, 0.705882, 0.470588, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 106.0
+margin_top = 18.0
+margin_right = 214.0
+margin_bottom = 166.0
+color = Color( 1, 0.823529, 0.627451, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Save" type="ColorRect" parent="."]
+margin_left = 120.0
+margin_top = 32.0
+margin_right = 200.0
+margin_bottom = 56.0
+color = Color( 0.745098, 0.509804, 0.266667, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Save"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 78.0
+margin_bottom = 22.0
+color = Color( 0.862745, 1, 0.392157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Save"]
+margin_right = 80.0
+margin_bottom = 24.0
+custom_colors/font_color_shadow = Color( 0.392157, 0.254902, 0.137255, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Save"
+align = 1
+valign = 1
+
+[node name="Load" type="ColorRect" parent="."]
+margin_left = 120.0
+margin_top = 64.0
+margin_right = 200.0
+margin_bottom = 88.0
+color = Color( 0.745098, 0.509804, 0.266667, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Load"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 78.0
+margin_bottom = 22.0
+color = Color( 1, 0.215686, 0.215686, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Load"]
+margin_right = 80.0
+margin_bottom = 24.0
+custom_colors/font_color_shadow = Color( 0.392157, 0.254902, 0.137255, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Load"
+align = 1
+valign = 1
+
+[node name="Restart" type="ColorRect" parent="."]
+margin_left = 120.0
+margin_top = 96.0
+margin_right = 200.0
+margin_bottom = 120.0
+color = Color( 0.745098, 0.509804, 0.266667, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Restart"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 78.0
+margin_bottom = 22.0
+color = Color( 1, 0.815686, 0.627451, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Restart"]
+margin_right = 80.0
+margin_bottom = 24.0
+custom_colors/font_color_shadow = Color( 0.392157, 0.254902, 0.137255, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Restart"
+align = 1
+valign = 1
+
+[node name="Quit" type="ColorRect" parent="."]
+margin_left = 120.0
+margin_top = 128.0
+margin_right = 200.0
+margin_bottom = 152.0
+color = Color( 0.745098, 0.509804, 0.266667, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Quit"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 78.0
+margin_bottom = 22.0
+color = Color( 1, 0.815686, 0.627451, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Quit"]
+margin_right = 80.0
+margin_bottom = 24.0
+custom_colors/font_color_shadow = Color( 0.392157, 0.254902, 0.137255, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Quit"
+align = 1
+valign = 1
